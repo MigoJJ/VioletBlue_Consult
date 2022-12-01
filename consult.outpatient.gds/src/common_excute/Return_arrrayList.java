@@ -10,13 +10,13 @@ public class Return_arrrayList {
         Scanner sc = new Scanner(System.in);
         String c= "j";
         ArrayList<String> inputData = new ArrayList<>();
-        do {
-	        System.out.println("enter the data add to the list.........");
-	        c = sc.nextLine();
-	        inputData.add(c);
-        } while(c != "");
-        System.out.println(inputData);
-        inputData = subStringArrayList(inputData);
+	        do {
+		        System.out.println("enter the data add to the list.........");
+		        c = sc.nextLine();
+		        inputData.add(c);
+	        } while(c != "");
+	//        System.out.println(inputData);
+	    inputData = subStringArrayList(inputData);
         return inputData;
     }
 

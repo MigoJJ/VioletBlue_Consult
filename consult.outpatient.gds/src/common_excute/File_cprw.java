@@ -75,7 +75,7 @@ public class File_cprw {
 	public static void writeliner(String writef, String writed) throws IOException {
 	    try {
 	      FileWriter myWriter = new FileWriter(writef, true);
-	      myWriter.write(writed+ "\n");
+	      myWriter.write(writed + "\n");
 	      myWriter.close();
 //		      System.out.println("Successfully wrote to the file.");
 	    } catch (IOException e) {
