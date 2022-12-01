@@ -11,16 +11,17 @@ public class ophtha {
 		System.out.println("<Comprehensive diabetic retinopathy exams by a ophthalmologist>\n\n"
 				+ "Types of Diabetes\n"
 				+ "\t[ 1 ] Type 1 DM.\t\t[ 2 ] Type 2 DM.\n\t[ 3 ] Gestational DM.\t[ 4 ] Prediabetes. ");
-		String typedia ="[   ] Type 1 DM,\t[   ] Type 2 DM,\t[   ] Gestational DM,\t[   ] Prediabetes,";
+		
+		String typedia ="[   ] Type 1 DM.\t[   ] Type 2 DM.\t[   ] Gestational DM.\t[   ] Prediabetes.";
 		List <String> list = new ArrayList<String>();
-		String[] splitStr = typedia.split(",");
+		String[] splitStr = typedia.split("\\.\t");
 		
 		for(int i=0; i<splitStr.length; i++){
 			list.add(splitStr[i]);
 
 			String csplitStr = splitStr[i];
 			
-		    if(i==1) {
+		    if(i == 1) {
 		    String cc =csplitStr.replaceAll("\\[   \\]","[ v ]");
 		    list.set(1, cc);
 		    }
